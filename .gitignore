@@ -6,3 +6,4 @@ __pycache__/
 *.pyd
 build/
 dist/
+supabase-recon.egg-info/
