@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supabase-recon"
+version = "2026.03.25"
+description = "Passive Supabase recon tool for authorized bug bounty research"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "aiohttp>=3.9",
+    "beautifulsoup4>=4.12",
+    "typer>=0.12",
+    "rich>=13.7",
+]
+
+[project.scripts]
+supabase-recon = "supabase_recon.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["supabase_recon*"]
