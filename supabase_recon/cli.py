@@ -18,7 +18,7 @@ app = typer.Typer(
 )
 
 console = Console()
-__version__ = "1.1.0"
+__version__ = "2026.03.25"
 
 
 class ScanMode(str, Enum):
